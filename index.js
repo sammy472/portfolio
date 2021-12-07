@@ -1,7 +1,7 @@
 //Import required modules
 const express = require('express');
 const app = express();
-import { engine } from 'express-handlebars';
+const engine = require('express-handlebars');
 const path = require('path');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
@@ -36,7 +36,7 @@ function SendEmail(firstNmae, lastName, from, subject, message) {
 
 };
 //set up the handlebars template engine
-app.engine('handlebars', engine());
+app.engine('handlebars', engine({ defaultLayout: 'main', extname: '.handlebars' }));
 app.set('view engine', 'handlebars');
 app.set('views', './views');
 //setup static files path
