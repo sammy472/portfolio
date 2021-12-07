@@ -19,6 +19,7 @@ html {
     font-size: 100px;
     padding: 10px;
     margin: 8px;
+    text-align: center;
 }
 
 .para-wrapper {
@@ -60,6 +61,16 @@ html {
     word-spacing: 3px;
     padding: 4px;
     margin: 3px;
+    text-align: center;
+}
+
+.paragraph-sub {
+    font-weight: large;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    padding: 4px;
+    margin: 3px;
+    text-align: start;
 }
 
 .resume,
@@ -216,7 +227,7 @@ html {
 }
 
 .btn-wrapper button {
-    width: 100%;
+    width: 120px;
     height: 90%;
     border: none;
     background-color: blueviolet;
@@ -520,7 +531,7 @@ textarea {
         text-decoration: none;
     }
     .btn-wrapper button {
-        width: 100%;
+        width: 120px;
         height: 90%;
         border: none;
         background-color: blueviolet;
