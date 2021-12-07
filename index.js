@@ -5,7 +5,7 @@ const engine = require('express-handlebars');
 const path = require('path');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
-const port = process.env.PORT || 9000;
+const PORT = process.env.PORT || 5000;
 //body-parser middleware
 app.use(bodyParser.urlencoded({
     extended: false
@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({
 //create a transporter function
 function SendEmail(firstNmae, lastName, from, subject, message) {
     const mailtransporter = nodemailer.createTransport({
-        service: 'samuelboateng472@gmail.com',
+        service: 'gmail',
         auth: {
             user: from,
             pass: 'Newtonian472'
