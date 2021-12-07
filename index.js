@@ -1,7 +1,7 @@
 //Import required modules
 const express = require('express');
 const app = express();
-const exphbs = require('express-handlebars');
+import { engine } from 'express-handlebars';
 const path = require('path');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
@@ -36,8 +36,9 @@ function SendEmail(firstNmae, lastName, from, subject, message) {
 
 };
 //set up the handlebars template engine
-app.engine('hbs', exphbs({ defaultLayout: 'main', extname: '.hbs' }));
-app.set('view engine', 'hbs');
+app.engine('handlebars', engine());
+app.set('view engine', 'handlebars');
+app.set('views', './views');
 //setup static files path
 app.use(express.static(path.join(__dirname, './public')));
 //Request hanldlers
@@ -62,6 +63,6 @@ app.post('/email', (req, res) => {
     res.redirect(303, 'contact');
 });
 //Server set up
-app.listen(9000, () => {
+app.listen(PORT, () => {
     console.log('Server is listening on port 9000');
 });
