@@ -8,6 +8,9 @@ const navSlide = () => {
         //toggle
         nav.classList.toggle("nav-active");
         //animate
+        const width = window.innerWidth;
+        nav.style.width = width + "px";
+
         navlinks.forEach((links, index) => {
             if (links.style.animation) {
                 links.style.animation = '';
@@ -15,7 +18,7 @@ const navSlide = () => {
                 links.style.animation = `navLinkFade 0.5s ease forwards ${index/5+1.5}s`;
             };
         });
-
+        document.body.classList.toggle('hide-scroll');
         //burger animation
         bg.classList.toggle("toggle");
     });

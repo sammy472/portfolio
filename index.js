@@ -55,7 +55,7 @@ app.get('/contact', (req, res) => {
     res.render('contact');
 });
 app.get('/download', (req, res) => {
-    res.download('./public/cv/sammy.pdf', (err, info) => { return });
+    res.download('./public/cv/better.pdf', (err, info) => { return });
 });
 app.post('/email', (req, res) => {
     const { firstNmae, lastName, email, subject, message } = req.body;
