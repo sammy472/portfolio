@@ -352,13 +352,16 @@ textarea {
         margin: 0px;
         box-sizing: border-box;
     }
+    .do {
+        color: white;
+    }
     body {
         background-color: #F0F3F1;
         font-family: 'PT Sans', sans-serif;
-        ;
+        background-color: black;
     }
     .header {
-        color: black;
+        color: white;
         font-size: 85px;
         padding: 10px;
         margin: 8px;
@@ -366,6 +369,7 @@ textarea {
     .para-wrapper {
         padding: 10px;
         margin: 8px;
+        color: white;
     }
     .main-div {
         width: 100%;
@@ -397,6 +401,7 @@ textarea {
         word-spacing: 3px;
         padding: 4px;
         margin: 3px;
+        color: white;
     }
     .resume,
     .projects,
@@ -427,7 +432,7 @@ textarea {
     }
     .dots-wrapper>a {
         text-decoration: none;
-        color: black;
+        color: white;
     }
     .img-wrapper {
         border-radius: 50%;
@@ -542,12 +547,12 @@ textarea {
         color: black;
         cursor: pointer;
     }
-    .btn-wrapper button:hover .span {
-        color: black;
+    .span {
+        color: white;
     }
     .span {
         font-size: larger;
-        color: white;
+        color: black;
     }
     .bigger {
         max-width: 90%;
@@ -574,12 +579,13 @@ textarea {
     .visit {
         height: 40px;
         width: 30%;
-        border: 1px solid black;
+        border: 1px solid white;
         border-radius: 6px;
         font-size: larger;
-        color: black;
+        color: white;
         padding: 5px;
         margin: 4px;
+        background-color: transparent;
     }
     .visit:hover {
         border-radius: 6px;
@@ -664,10 +670,10 @@ textarea {
     .visit {
         height: 40px;
         width: 30%;
-        border: 1px solid black;
+        border: 1px solid white;
         border-radius: 6px;
         font-size: larger;
-        color: black;
+        color: white;
         padding: 5px;
         margin: 4px;
     }
